@@ -1,6 +1,7 @@
 import React from 'react';
 import { ShieldCheck, HeartHandshake, Recycle, Award, Phone, CheckCircle2 } from 'lucide-react';
 import { COMPANY_INFO } from '../data/companyData';
+import furnitureHaulingImg from '../assets/images/furniture_hauling_1785782747287.jpg';
 
 export const AboutSection: React.FC = () => {
   return (
@@ -13,7 +14,7 @@ export const AboutSection: React.FC = () => {
           <div className="lg:col-span-5 relative">
             <div className="relative rounded-2xl overflow-hidden border border-slate-200 shadow-md">
               <img
-                src="/src/assets/images/furniture_hauling_1785782747287.jpg"
+                src={furnitureHaulingImg}
                 alt="Joe's Junk Removal crew carefully hauling furniture in Albuquerque"
                 className="w-full h-80 sm:h-96 lg:h-[420px] object-cover"
                 referrerPolicy="no-referrer"

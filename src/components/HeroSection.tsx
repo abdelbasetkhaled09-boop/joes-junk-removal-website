@@ -1,6 +1,8 @@
 import React from 'react';
 import { Phone, MessageSquare, Check } from 'lucide-react';
 import { COMPANY_INFO } from '../data/companyData';
+import heroTruckImg from '../assets/images/joes_red_truck_hero_1785786805194.jpg';
+import workersLoadingImg from '../assets/images/joes_workers_loading_truck_1785788627317.jpg';
 
 interface HeroSectionProps {
   onOpenQuote: () => void;
@@ -36,7 +38,7 @@ export const HeroSection: React.FC<HeroSectionProps> = () => {
       {/* 1. HERO BANNER WITH RED TRUCK BACKGROUND */}
       <section className="relative h-[320px] sm:h-[400px] lg:h-[440px] bg-slate-900 overflow-hidden flex items-center justify-center">
         <img
-          src="/src/assets/images/joes_red_truck_hero_1785786805194.jpg"
+          src={heroTruckImg}
           alt="Joe's Junk Removal Red Truck in Albuquerque"
           className="absolute inset-0 w-full h-full object-cover object-center brightness-90"
         />
@@ -118,7 +120,7 @@ export const HeroSection: React.FC<HeroSectionProps> = () => {
             <div className="pt-2">
               <div className="rounded-2xl overflow-hidden border-2 border-slate-300 shadow-xl bg-slate-900">
                 <img
-                  src="/src/assets/images/joes_workers_loading_truck_1785788627317.jpg"
+                  src={workersLoadingImg}
                   alt="Joe's Junk Removal crew loading heavy furniture onto branded red truck"
                   className="w-full h-80 sm:h-[420px] object-cover object-center"
                 />

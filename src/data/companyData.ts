@@ -1,4 +1,10 @@
 import { ServiceItem, ReviewItem, FAQItem } from '../types';
+import vintagePosterImg from '../assets/images/joes_vintage_poster_1785784585634.jpg';
+import yardBrushImg from '../assets/images/yard_brush_before_after_1785784597080.jpg';
+import lotCleanoutImg from '../assets/images/lot_cleanout_before_after_1785784611020.jpg';
+import bobcatDemoImg from '../assets/images/bobcat_demolition_1785784572132.jpg';
+import garageCleanoutImg from '../assets/images/garage_cleanout_1785782758041.jpg';
+import furnitureHaulingImg from '../assets/images/furniture_hauling_1785782747287.jpg';
 
 export const COMPANY_INFO = {
   name: "Joe's Junk Removal LLC",
@@ -17,7 +23,7 @@ export const COMPANY_INFO = {
   reviewCount: 384,
   license: "Fully Insured & Bonded | Licensed NM LLC",
   motto: "Don't call a franchise. Call a neighbor.",
-  flyerImage: "/src/assets/images/joes_vintage_poster_1785784585634.jpg"
+  flyerImage: vintagePosterImg
 };
 
 export const SERVICES: ServiceItem[] = [
@@ -275,13 +281,31 @@ export const FAQS: FAQItem[] = [
 
 export const BEFORE_AFTER_CASES = [
   {
+    id: 'ba1',
+    title: 'Garage Declutter in NE Heights',
+    category: 'Garage Cleanout',
+    beforeDesc: 'Packed full of old furniture, broken boxes, and discarded yard equipment blocking car parking.',
+    afterDesc: 'Completely cleared and swept clean, turning the garage back into a clean 2-car parking bay.',
+    imageBefore: 'https://images.unsplash.com/photo-1595428774223-ef52624120d2?auto=format&fit=crop&q=80&w=800',
+    imageAfter: garageCleanoutImg
+  },
+  {
     id: 'ba_bush',
     title: 'Overgrown Shrub & Front Yard Cleanout',
     category: 'Tree & Brush Removal',
     beforeDesc: 'Massive overgrown bush blocking the Southwestern stucco archway entrance and chainlink fence.',
     afterDesc: 'Bush extracted down to roots, ground raked clean, blower swept, opening up the beautiful home facade.',
-    imageBefore: '/src/assets/images/yard_brush_before_after_1785784597080.jpg',
-    imageAfter: '/src/assets/images/yard_brush_before_after_1785784597080.jpg'
+    imageBefore: 'https://images.unsplash.com/photo-1558904541-efa8c196b27d?auto=format&fit=crop&q=80&w=800',
+    imageAfter: yardBrushImg
+  },
+  {
+    id: 'ba_furniture',
+    title: 'Furniture & Appliance Haul Away',
+    category: 'Furniture Hauling',
+    beforeDesc: 'Heavy pile of unwanted mattresses, sectionals, and appliances cluttering driveway.',
+    afterDesc: 'Loaded onto Joe’s truck within 45 minutes, driveway fully cleared and swept.',
+    imageBefore: 'https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&q=80&w=800',
+    imageAfter: furnitureHaulingImg
   },
   {
     id: 'ba_lot',
@@ -289,8 +313,8 @@ export const BEFORE_AFTER_CASES = [
     category: 'Interior/Exterior Demolition',
     beforeDesc: 'Sprawling pile of old wood framing, tin roofing, concrete slabs, discarded tires, and debris.',
     afterDesc: 'Entire land cleared, leveled desert sand with heavy machinery tracks, ready for new building.',
-    imageBefore: '/src/assets/images/lot_cleanout_before_after_1785784611020.jpg',
-    imageAfter: '/src/assets/images/lot_cleanout_before_after_1785784611020.jpg'
+    imageBefore: 'https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&q=80&w=800',
+    imageAfter: lotCleanoutImg
   },
   {
     id: 'ba_bobcat',
@@ -298,16 +322,7 @@ export const BEFORE_AFTER_CASES = [
     category: 'Heavy Demolition',
     beforeDesc: 'Decaying outdoor wooden shed and framing requiring heavy equipment destruction and removal.',
     afterDesc: 'Bobcat track loader crushed, loaded, and hauled away the entire structure in 2 hours.',
-    imageBefore: '/src/assets/images/bobcat_demolition_1785784572132.jpg',
-    imageAfter: '/src/assets/images/bobcat_demolition_1785784572132.jpg'
-  },
-  {
-    id: 'ba1',
-    title: 'Garage Declutter in NE Heights',
-    category: 'Garage Cleanout',
-    beforeDesc: 'Packed full of old furniture, broken boxes, and discarded yard equipment blocking car parking.',
-    afterDesc: 'Completely cleared and swept clean, turning the garage back into a clean 2-car parking bay.',
-    imageBefore: 'https://images.unsplash.com/photo-1595428774223-ef52624120d2?auto=format&fit=crop&q=80&w=800',
-    imageAfter: '/src/assets/images/garage_cleanout_1785782758041.jpg'
+    imageBefore: 'https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&q=80&w=800',
+    imageAfter: bobcatDemoImg
   }
 ];

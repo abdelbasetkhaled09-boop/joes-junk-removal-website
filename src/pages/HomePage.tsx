@@ -2,6 +2,10 @@ import React from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { HeroSection } from '../components/HeroSection';
 import { GoogleMapSection } from '../components/GoogleMapSection';
+import vintagePosterImg from '../assets/images/joes_vintage_poster_1785784585634.jpg';
+import bobcatDemoImg from '../assets/images/bobcat_demolition_1785784572132.jpg';
+import yardBrushImg from '../assets/images/yard_brush_before_after_1785784597080.jpg';
+import lotCleanoutImg from '../assets/images/lot_cleanout_before_after_1785784611020.jpg';
 import {
   Truck,
   Calculator,
@@ -196,7 +200,7 @@ export const HomePage: React.FC<HomePageProps> = ({
             <div className="bg-white border-2 border-amber-300 rounded-3xl overflow-hidden shadow-md flex flex-col justify-between group hover:shadow-xl transition-all">
               <div className="relative overflow-hidden bg-amber-100">
                 <img
-                  src="/src/assets/images/joes_vintage_poster_1785784585634.jpg"
+                  src={vintagePosterImg}
                   alt="Joe's Junk Removal Albuquerque Heavy Hitter Poster"
                   className="w-full h-64 object-contain p-2 group-hover:scale-105 transition-transform duration-300"
                 />
@@ -225,7 +229,7 @@ export const HomePage: React.FC<HomePageProps> = ({
             <div className="bg-white border border-slate-200 rounded-3xl overflow-hidden shadow-md flex flex-col justify-between group hover:shadow-xl transition-all">
               <div className="relative overflow-hidden bg-slate-900 h-64">
                 <img
-                  src="/src/assets/images/bobcat_demolition_1785784572132.jpg"
+                  src={bobcatDemoImg}
                   alt="Bobcat skid steer clearing heavy demolition debris in Albuquerque"
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                 />
@@ -253,7 +257,7 @@ export const HomePage: React.FC<HomePageProps> = ({
             <div className="bg-white border border-slate-200 rounded-3xl overflow-hidden shadow-md flex flex-col justify-between group hover:shadow-xl transition-all">
               <div className="relative overflow-hidden bg-slate-900 h-64">
                 <img
-                  src="/src/assets/images/yard_brush_before_after_1785784597080.jpg"
+                  src={yardBrushImg}
                   alt="Before and after overgrown bush removal in Albuquerque"
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                 />
@@ -281,7 +285,7 @@ export const HomePage: React.FC<HomePageProps> = ({
             <div className="bg-white border border-slate-200 rounded-3xl overflow-hidden shadow-md flex flex-col justify-between group hover:shadow-xl transition-all">
               <div className="relative overflow-hidden bg-slate-900 h-64">
                 <img
-                  src="/src/assets/images/lot_cleanout_before_after_1785784611020.jpg"
+                  src={lotCleanoutImg}
                   alt="Albuquerque lot cleanout site before and after"
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                 />
