@@ -1,0 +1,6 @@
+{
+  "name": "Joe's Junk Removal LLC",
+  "description": "Fast, affordable junk removal in Albuquerque, NM and surrounding areas. Get a free quote or call (505) 527-6573 for same-day service.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
